@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rockpaper.css">
+    <title>Taş Kağıt Makas</title>
+</head>
+<body onload="newGame()">
+    
+    <div class="container">
+        <div class="top_info">
+            <h1>Taş Kağıt Makas</h1>
+            <p>Oyuncu <span id="score_a"></span></p>
+            <p>Bilgisayar <span id="score_b"></span></p>
+            
+            <button onclick="newGame()">Yeni Oyun</button>
+        </div>
+        
+        <div class="game_container">
+            <div id="pedra" class="" onclick="pickOption(1)">
+                <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-rock-o-512.png">
+                <span>Taş</span>
+            </div>
+            <div id="papel" class="" onclick="pickOption(2)">
+                <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-stop-o-512.png">
+                <span>Kağıt</span>
+            </div>
+            <div id="tesoura" class="" onclick="pickOption(3)">
+                <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-scissors-o-512.png">
+                <span>Makas</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="rockpaper.js"></script>
+</body>
+</html>

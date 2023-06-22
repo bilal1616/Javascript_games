@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tetris.css">
+  <title>Javascript Tetris</title>
+</head>
+</head>
+
+<body>
+
+  <div id="tetris">
+    <div id="menu">
+      <p id="start"><a href="javascript:play();">Oynamak için Boşluk Tuşuna Basın.</a></p>
+      <p><canvas id="upcoming"></canvas></p>
+      <p>Skor: <span id="score">00000</span></p>
+      <p>Satırlar: <span id="rows">0</span></p>
+    </div>
+    <canvas id="canvas">
+      Üzgünüz, tarayıcınız aşağıdakileri desteklemediğinden bu örnek çalıştırılamaz. &lt;canvas&gt; element
+    </canvas>
+  </div>
+
+  <script src="stats.js"></script>
+  <script src="settings.js"></script>
+
+</body>
+</html>
